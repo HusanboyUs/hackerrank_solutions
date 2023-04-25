@@ -17,3 +17,8 @@ SELECT * FROM CITY WHERE ID=1661;
 --Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
 SELECT * FROM CITY WHERE COUNTRYCODE = "JPN"
 
+--Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+SELECT NAME FROM CITY WHERE COUNTRYCODE ="JPN"
+
+--Query a list of CITY and STATE from the STATION table.
+SELECT CITY,STATE FROM STATION 
