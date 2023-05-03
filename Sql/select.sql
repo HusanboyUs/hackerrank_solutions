@@ -33,6 +33,7 @@ SELECT name FROM Employee ORDER BY name ASC;
 --in Employee having a salary greater than  per month who have been employees for less than  months. 
 --Sort your result by ascending employee_id.
 
+--Weather station start from 4
 SELECT name FROM Employee WHERE salary > 2000 AND months <10 ORDER BY employee_id ASC;
 
 --Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u)
@@ -43,3 +44,7 @@ SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY,1) IN ('a','e','i','o','u') AN
 --Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
 
 SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u')
+
+--Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+
+SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u');
