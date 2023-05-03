@@ -34,3 +34,8 @@ SELECT name FROM Employee ORDER BY name ASC;
 --Sort your result by ascending employee_id.
 
 SELECT name FROM Employee WHERE salary > 2000 AND months <10 ORDER BY employee_id ASC;
+
+--Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u)
+-- as both their first and last characters. Your result cannot contain duplicates.
+
+SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY,1) IN ('a','e','i','o','u') AND RIGHT(CITY,1) IN ('a','e','i','o','u');
