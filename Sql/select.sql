@@ -88,3 +88,8 @@ SELECT SUM(CITY.POPULATION)
 FROM CITY
 JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
 WHERE CONTINENT = 'Asia'
+
+
+
+--Query the total population of all cities in CITY where District is California.
+SELECT sum(population) FROM CITY WHERE DISTRICT = 'California';
