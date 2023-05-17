@@ -105,3 +105,7 @@ SELECT ROUND(AVG(POPULATION),0) FROM CITY
 
 --Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
 SELECT sum(POPULATION) FROM CITY WHERE COUNTRYCODE = 'JPN'
+
+--Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
+FROM STATION
