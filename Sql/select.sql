@@ -109,3 +109,8 @@ SELECT sum(POPULATION) FROM CITY WHERE COUNTRYCODE = 'JPN'
 --Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
 SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
 FROM STATION
+
+
+SELECT city,LENGTH(city) FROM station ORDER BY LENGTH(city),city LIMIT 1;
+SELECT city,LENGTH(city) FROM station ORDER BY LENGTH(city) DESC,city LIMIT 1;
+
