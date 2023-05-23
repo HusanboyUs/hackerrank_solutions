@@ -126,3 +126,5 @@ SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY,1) in ('a','e','i','o','u')
 --select count(population)from city where population>100000;
 select count(population)from city where population>100000;
 
+--Query the difference between the maximum and minimum populations in CITY.
+SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY
