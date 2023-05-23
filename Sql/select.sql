@@ -132,3 +132,7 @@ SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY
 --The Blunder
 Select CEILING(AVG(SALARY) - AVG(REPLACE(SALARY, '0', '')))
 From Employees
+
+
+--Weather observation station 2
+SELECT ROUND(SUM(LAT_N),2), ROUND(SUM(LONG_W),2) FROM STATION;
