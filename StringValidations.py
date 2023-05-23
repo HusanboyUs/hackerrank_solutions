@@ -14,6 +14,11 @@ if __name__ == '__main__':
     print(any([s.isdigit() for s in s]))
     print(any([s.islower() for s in s]))
     print(any([s.isupper() for s in s]))   
+    
+    
+    
+    
+    
 
 
 
