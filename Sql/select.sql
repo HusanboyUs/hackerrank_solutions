@@ -128,3 +128,7 @@ select count(population)from city where population>100000;
 
 --Query the difference between the maximum and minimum populations in CITY.
 SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY
+
+--The Blunder
+Select CEILING(AVG(SALARY) - AVG(REPLACE(SALARY, '0', '')))
+From Employees
