@@ -153,3 +153,12 @@ LIMIT 1
 
 --weather observation station 16
 SELECT ROUND(MIN(LAT_N),4) FROM STATION WHERE LAT_N > 38.7780
+
+
+
+--weather observation station 17
+SELECT ROUND(LONG_W,4) FROM STATION WHERE LAT_N=(SELECT MIN(LAT_N)
+    FROM STATION
+    WHERE LAT_N > 38.7780
+    
+)
