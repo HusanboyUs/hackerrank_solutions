@@ -1,15 +1,9 @@
-nums = [2,7,11,15]
-target = 9
-result=[]
-
-
-
-lead = 1
-while lead != len(nums):
-    for x in range(len(nums)):
-        total = nums[x] + nums[lead]
-        print(total)
-        result.append(total)
-    lead +=1
-
-print(result)    
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        result = []
+        for leader in range(len(nums)):
+            for follower in range(leader +1,len(nums)):
+                if nums[leader] + nums[follower] == target:
+                    result.append(leader)
+                    result.append(follower)
+        return result      
