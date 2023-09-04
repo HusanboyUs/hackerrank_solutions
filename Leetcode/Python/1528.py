@@ -3,19 +3,19 @@ indices = [4,5,6,7,0,2,1,3]
 
 
 #expected leetcode
+'''
+for indx in indices:
+    print(s[indx])
+'''
 
 
-def shuffle(s,indices):
-    res = []
-      
-    return res                       
+def shuffleString(s,indices):
+    result =[]
+    temp = {indices[i]:s[i] for i in range(len(indices))}
+    sorted_temp = dict(sorted(temp.items(), key=lambda item: item[1]))
 
 
+    
+    return sorted_temp
 
-
-print(shuffle(s,indices))    
-print(f'{indices}  -> how index should look like')
-result= []
-for indx,char in enumerate(list(s)):
-    result.append(indx)
-print(f'{result} -> current version')
+print(shuffleString(s,indices))    
