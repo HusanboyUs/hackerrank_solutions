@@ -6,4 +6,23 @@ Explanation: The process is
 11 --> 1 + 1 --> 2 
 Since 2 has only one digit, return it.
 '''
+num =38
+
+def addDigits(num: int) -> int:
+    res = None
+    temp = []
+
+    for x in range(1,len(str(num))):
+        ...
+
+    return temp    
+        
+   
+
+
+
+
+
+
+print(addDigits(num))
 
